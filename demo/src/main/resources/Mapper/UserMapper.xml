@@ -10,11 +10,25 @@
         <result column="password" property="password"/>
     </resultMap>
     
-    <select id="getUser" resultType="map">
-       SELECT * FROM user
+    <select id="listUser" resultType="map">
+       SELECT uid,username,password
+       FROM user
     </select>
     
-    <select id="login" resultType = "map">
-    
+    <insert id="saveUser" parameterType="map">
+       INSERT INTO `user`(username,password)
+       VALUES(#{username},#{password})
+    </insert>
+
+    <select id="getUser" parameterType="map" resultType="map">
+      SELECT uid,username,password
+      FROM user
+      WHERE username = {#username}
+    </select>
+
+    <select id="countUser" parameterType="map" resultType="int">
+        SELECT COUNT(*)
+        FROM user
+        WHERE username = #{username}
     </select>
 </mapper>
