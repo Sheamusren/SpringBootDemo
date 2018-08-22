@@ -15,22 +15,21 @@ import com.example.service.UserService;
 @Service
 public class UserServiceImpl implements UserService {
 	@Autowired
-	@SuppressWarnings("SpringJavaAutowiringInspection")
-    private UserDao uDao;
+    private UserDao userDao;
 	
 	@Override
 	public List<Map<String, Object>> listUser() {
-		return uDao.listUser();
+		return userDao.listUser();
 	}
 
 	@Override
 	public void saveUser(Map<String, Object> param) {
-		uDao.saveUser(param);
+		userDao.saveUser(param);
 	}
 
 	@Override
 	public int countUser(Map<String, Object> param) {
-		return uDao.countUser(param);
+		return userDao.countUser(param);
 	}
 
 }

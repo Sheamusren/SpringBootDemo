@@ -22,7 +22,7 @@ public class RedisUtils {
     
 	public static final String REDIS_SCHEMA_USER = "user";
 	public static final String REDIS_SCHEMA_PERMISSION = "permission";
-	private static final Long REDIS_TIMEOUT = 1800l; 
+	private static final Long REDIS_TIMEOUT = 1800L;
     
 
     /**
@@ -41,8 +41,9 @@ public class RedisUtils {
      */
     public void removePattern(final String pattern) {
         Set<Serializable> keys = redisTemplate.keys(pattern);
-        if (keys.size() > 0)
+        if (keys.size() > 0){
             redisTemplate.delete(keys);
+        }
     }
 
     /**
