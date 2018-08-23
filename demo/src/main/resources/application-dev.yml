@@ -1,8 +1,6 @@
 server:
   port: 8084
 
-mail: "2669344359@qq.com"
-
 spring:
   application:
     name: demo
