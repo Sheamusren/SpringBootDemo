@@ -1,6 +1,8 @@
 server:
   port: 8084
 
+mail: "2669344359@qq.com"
+
 spring:
   application:
     name: demo
@@ -28,6 +30,18 @@ spring:
     pool.min-idle: 0
     pool.max-active: 8
     pool.max-wait: -1
+  #mail
+  mail:
+    default-encoding: UTF-8
+    host: smtp.qq.com
+    username: 2669344359@qq.com
+    password: umakpitmsmuudjgh
+    port: 25
+    protocol: smtp
+    properties:
+       mail:
+          smtp:
+             auth: true
 
 #Eureka
 eureka:

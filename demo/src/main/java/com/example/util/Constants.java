@@ -117,4 +117,10 @@ public class Constants {
      */
     public static final String RES_CODE_907 = "907";
     public static final String RES_MESSAGE_907 = "用户已存在";
+
+    /**
+     * 邮件发送失败
+     */
+    public static final String RES_CODE_908 = "908";
+    public static final String RES_MESSAGE_908 = "邮件发送失败";
 }
