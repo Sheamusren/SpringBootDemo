@@ -3,7 +3,7 @@ package com.example.domain;
 public class User {
 	private Integer uid;
 	private String username;
-	private Integer password;
+	private String password;
 	
 	public Integer getUid() {
 		return uid;
@@ -17,13 +17,13 @@ public class User {
 	public void setUsername(String username) {
 		this.username = username;
 	}
-	public Integer getPassword() {
+	public String getPassword() {
 		return password;
 	}
-	public void setPassword(Integer password) {
+	public void setPassword(String password) {
 		this.password = password;
 	}
-	public User(Integer uid, String username, Integer password) {
+	public User(Integer uid, String username, String password) {
 		super();
 		this.uid = uid;
 		this.username = username;

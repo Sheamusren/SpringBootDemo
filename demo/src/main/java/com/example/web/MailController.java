@@ -4,21 +4,18 @@ import com.example.DemoApplication;
 import com.example.domain.JsonMessage;
 import com.example.util.Constants;
 import com.example.util.ParamsUtils;
-import org.apache.log4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.util.HashMap;
 import java.util.Map;
 
 @RestController
@@ -30,7 +27,7 @@ public class MailController {
     private String from;
 
     @Autowired
-    JavaMailSender jms;
+    private JavaMailSender jms;
 
     @PostMapping("/send")
     public JsonMessage send(HttpServletRequest request, HttpServletResponse response){
