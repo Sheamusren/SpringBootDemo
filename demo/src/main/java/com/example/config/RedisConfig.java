@@ -1,4 +1,4 @@
-package com.example.cache;
+package com.example.config;
 
 import java.lang.reflect.Method;
 

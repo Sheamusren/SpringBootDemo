@@ -24,7 +24,7 @@
           (#{username},#{password})
     </insert>
 
-    <select id="getUser" parameterType="map" resultType="map">
+    <select id="getUserByUsername" parameterType="String" resultMap="UserMap">
         SELECT
           uid,
           username,

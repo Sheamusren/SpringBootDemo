@@ -3,6 +3,7 @@ package com.example.dao;
 import java.util.List;
 import java.util.Map;
 
+import com.example.domain.User;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
@@ -36,4 +37,10 @@ public interface UserDao {
 	 *删除重复数据
 	 */
 	void removeRepeatUser();
+
+	/**
+	 * 根据用户名获取用户信息
+	 * @return list
+	 */
+	User getUserByUsername(String username);
 }
