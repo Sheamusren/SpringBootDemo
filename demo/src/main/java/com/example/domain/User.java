@@ -1,32 +1,18 @@
 package com.example.domain;
 
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+/**
+ * @author sheamus
+ * @date 2018/9/11.
+ */
+@Setter
+@Getter
+@ToString
 public class User {
 	private Integer uid;
 	private String username;
 	private String password;
-	
-	public Integer getUid() {
-		return uid;
-	}
-	public void setUid(Integer uid) {
-		this.uid = uid;
-	}
-	public String getUsername() {
-		return username;
-	}
-	public void setUsername(String username) {
-		this.username = username;
-	}
-	public String getPassword() {
-		return password;
-	}
-	public void setPassword(String password) {
-		this.password = password;
-	}
-	public User(Integer uid, String username, String password) {
-		super();
-		this.uid = uid;
-		this.username = username;
-		this.password = password;
-	}
 }

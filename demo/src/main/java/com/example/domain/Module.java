@@ -1,25 +1,17 @@
 package com.example.domain;
 
-public class Module {
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
+/**
+ * @author sheamus
+ * @date 2018/9/11.
+ */
+@Setter
+@Getter
+@ToString
+public class Module {
 	private Integer mid;
 	private String mname;
-	public Integer getMid() {
-		return mid;
-	}
-	public void setMid(Integer mid) {
-		this.mid = mid;
-	}
-	public String getMname() {
-		return mname;
-	}
-	public void setMname(String mname) {
-		this.mname = mname;
-	}
-	public Module(Integer mid, String mname) {
-		super();
-		this.mid = mid;
-		this.mname = mname;
-	}
-    	
 }

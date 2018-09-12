@@ -11,8 +11,7 @@ import lombok.ToString;
 @Setter
 @Getter
 @ToString
-public class Role {
-
-	private Integer rid;
-	private String rname;
+public class SystemConfig {
+    private Integer id;
+    private String staticWebsite;
 }
