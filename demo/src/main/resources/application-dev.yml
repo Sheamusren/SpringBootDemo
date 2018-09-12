@@ -1,5 +1,5 @@
 server:
-  port: 8084
+  port: 8762
 
 spring:
   application:
@@ -45,13 +45,15 @@ spring:
     content-type: text/html
     mode: HTML5
 
-  #Eureka
-  eureka:
-    client:
-      serviceUrl:
-         defaultZone: http://localhost:8761/eureka/
+mybatis:
+    mapper-locations: classpath:Mapper/*.xml
+#  resources:
+#    static-locations: classpath:static/,file:static/
 
-  #logging
-  logging:
-    level: debug
+eureka:
+  client:
+    serviceUrl:
+       defaultZone: http://localhost:8761/eureka/
 
+logging:
+  level: debug
