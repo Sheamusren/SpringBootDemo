@@ -36,6 +36,11 @@ public class SystemController {
         return ResultUtil.view("login");
     }
 
+    @RequestMapping("/index")
+    public ModelAndView index(HashMap<String, Object> map) {
+        return ResultUtil.view("index");
+    }
+
     @PostMapping("/login")
     public JsonMessage login(HttpServletRequest request, HashMap<String, Object> map){
         JsonMessage result = new JsonMessage();

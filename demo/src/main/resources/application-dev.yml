@@ -46,7 +46,7 @@ spring:
     mode: HTML5
 
 mybatis:
-    mapper-locations: classpath:Mapper/*.xml
+    mapper-locations: classpath:mapper/*.xml
 
 eureka:
   client:
