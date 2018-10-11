@@ -4,4 +4,24 @@
     <select id="getSystemConfig" resultType="Map">
         SELECT * FROM system_config
     </select>
+
+    <select id="countUserByUsername" parameterType="map" resultType="int">
+        SELECT
+          COUNT(*)
+        FROM
+          user
+        WHERE
+          username = #{username}
+    </select>
+
+    <select id="countUserByPassword" parameterType="map" resultType="int">
+        SELECT
+          COUNT(*)
+        FROM
+          user
+        WHERE
+          password = #{password}
+        AND
+          username = #{username}
+    </select>
 </mapper>

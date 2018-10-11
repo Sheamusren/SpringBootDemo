@@ -26,7 +26,6 @@ public class MailController {
     @Value("${mail.username}")
     private String from;
 
-    @Autowired
     private JavaMailSender jms;
 
     @PostMapping("/send")

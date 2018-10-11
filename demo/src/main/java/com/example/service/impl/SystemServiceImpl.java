@@ -19,4 +19,14 @@ public class SystemServiceImpl implements SystemService {
     public Map getSystemConfig() {
         return systemDao.getSystemConfig();
     }
+
+    @Override
+    public int countUserByUsername(Map param) {
+        return systemDao.countUserByUsername(param);
+    }
+
+    @Override
+    public int countUserByPassword(Map param) {
+        return systemDao.countUserByPassword(param);
+    }
 }

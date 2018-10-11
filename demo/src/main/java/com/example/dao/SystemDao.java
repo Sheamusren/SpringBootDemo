@@ -17,4 +17,18 @@ public interface SystemDao {
      * @return map
      */
     Map getSystemConfig();
+
+    /**
+     * 根据用户名查询用户
+     * @param param request
+     * @return int
+     */
+    int countUserByUsername(Map param);
+
+    /**
+     * 根据密码查询用户
+     * @param param request
+     * @return int
+     */
+    int countUserByPassword(Map param);
 }

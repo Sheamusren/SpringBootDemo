@@ -4,14 +4,17 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import com.example.service.SystemService;
 import com.example.util.MD5Utils;
 import com.example.util.ParamsUtils;
+import com.example.util.ResultUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import com.example.domain.JsonMessage;
 import com.example.service.UserService;
 import com.example.util.Constants;
+import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -24,7 +27,9 @@ import javax.servlet.http.HttpServletResponse;
 public class UserController {
     @Autowired
 	private UserService userService;
-	
+    @Autowired
+    private SystemService systemService;
+
     @GetMapping(value = "/listUser")
     public JsonMessage getUser() {
     	JsonMessage result = new JsonMessage();

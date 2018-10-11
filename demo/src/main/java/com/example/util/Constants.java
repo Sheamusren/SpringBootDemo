@@ -86,13 +86,13 @@ public class Constants {
      * 登录用户名为空
      */
     public static final String RES_CODE_902 = "902";
-    public static final String RES_MESSAGE_902 = "登录用户名为空";
+    public static final String RES_MESSAGE_902 = "登录用户名错误";
 
     /**
      * 登录密码为空
      */
     public static final String RES_CODE_903 = "903";
-    public static final String RES_MESSAGE_903 = "登录密码为空";
+    public static final String RES_MESSAGE_903 = "登录密码错误";
 
     /**
      * 用户名不存在或密码错误
