@@ -10,7 +10,6 @@
     
     <select id="listUser" resultType="map">
         SELECT
-          uid,
           username,
           password
         FROM

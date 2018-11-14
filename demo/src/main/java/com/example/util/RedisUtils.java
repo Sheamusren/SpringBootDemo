@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * redisCache 工具类
- * 
+ * @author sheamus.ren
  */
 @SuppressWarnings("unchecked")
 @Component

@@ -1,10 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8"/>
+    <script src="webjars/jquery/3.1.1/jquery.min.js"></script>
+    <script src="webjars/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="webjars/bootstrap/4.0.0/css/bootstrap.min.css" />
     <title>index</title>
+    <script th:inline="javascript">
+        $(document).on('click','#export',function(){
+            window.location.href="exportUser";
+        })
+    </script>
 </head>
 <body>
-  登陆成功
+<div class="container">
+    <div class="form-group">
+        <button id="export" type="button" class="btn btn-info">导出</button>
+    </div>
+</div>
 </body>
 </html>

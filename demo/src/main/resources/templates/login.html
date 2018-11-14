@@ -9,7 +9,6 @@
     <title>欢迎</title>
     <script th:inline="javascript">
         $(document).on('click','#login_commit',function(){
-            var path = [[${systemConfig.static_website}]];
             var param = {
                 'username': $("#username").val(),
                 'password': $("#password").val()
